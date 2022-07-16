@@ -52,8 +52,3 @@ def init():
   pubsub.start()
   # you can either start listening before or after you started pubsub.
   uuid = pubsub.listen_channel_points(user_id, callback_redemption)
-  input('press ENTER to close...')
-  # you do not need to unlisten to topics before stopping but you can listen and unlisten at any moment you want
-  pubsub.unlisten(uuid)
-  pubsub.stop()
-  pump.cleanAndExit()

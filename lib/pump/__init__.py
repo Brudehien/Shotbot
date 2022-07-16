@@ -1,5 +1,6 @@
 import sys
 import RPi.GPIO as GPIO            # import RPi.GPIO module  
+GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)             # choose BCM or BOARD  
 GPIO.setup(12, GPIO.OUT)           # set GPIO12 as an output
 
